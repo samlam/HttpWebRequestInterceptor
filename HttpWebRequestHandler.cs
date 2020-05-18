@@ -19,7 +19,7 @@ namespace HttpWebReqInterceptor
 
         void IHttpWebRequestHandler.Add(HttpWebRequest request)
         {
-            //check feature toggle here
+            // update both _OriginUri and _Uri inside HttpWebRequest
 
             Uri newUri = new Uri(newUrl);
 
